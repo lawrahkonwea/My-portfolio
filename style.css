@@ -6,7 +6,16 @@
   box-sizing: border-box;
   font-family: sans-serif, 'Poppins';
   list-style: none;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.main-wrapper {
+  background-color: #fff;
+  border-bottom-left-radius: 80px;
 }
 
 .container {
@@ -46,11 +55,16 @@ header {
   color: #344563;
 }
 
-.logo {
-  color: #6070ff;
-  font-weight: 700;
+.my-logo {
+  font-weight: 750;
   font-size: 18px;
-  height: 10px;
+  height: 15px;
+  margin-top: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #6070ff;
 }
 
 .hamburger {
@@ -83,14 +97,9 @@ header {
 }
 
 .img-bg {
-  background-image: url(images/Header\ bg@2x.png);
+  background: url(images/header-shapes\ mobile.png) no-repeat;
   background-size: 100% auto;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto 27px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 h1 {
@@ -98,6 +107,7 @@ h1 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
+  color: #091e42;
 }
 
 .paragraph {
@@ -120,5 +130,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 50%;
+  margin-bottom: 40%;
 }
