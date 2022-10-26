@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Lexend+Deca:wght@300&family=Poppins:wght@300;400&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, 'Poppins';
+  list-style: none;
+  margin-top: 5px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.main-wrapper {
+  background-color: #fff;
+  border-bottom-left-radius: 80px;
+}
+
+.container {
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 27px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-list {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #344563;
+}
+
+.my-logo {
+  font-weight: 750;
+  font-size: 18px;
+  height: 15px;
+  margin-top: 40px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.hamburger {
+  display: block;
+  position: fixed;
+  right: 40px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #acb7c3;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.content-wrapper {
+  margin-top: 20%;
+}
+
+.img-bg {
+  background: url(images/header-shapes\ mobile.png) no-repeat;
+  background-size: 100% auto;
+  margin-top: 50px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #091e42;
+}
+
+.paragraph {
+  color: #344563;
+  font-size: 16px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: 400px;
+}
+
+.lets-connect {
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 40%;
+}
