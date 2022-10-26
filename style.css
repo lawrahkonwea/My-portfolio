@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: sans-serif, 'Poppins';
   list-style: none;
+  margin-top: 10px;
 }
 
 .container {
@@ -22,13 +23,13 @@ section {
 
 header {
   display: flex;
-  justify-content: space-between !important;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 .nav-list {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -49,6 +50,32 @@ header {
   color: #6070ff;
   font-weight: 700;
   font-size: 18px;
+  height: 10px;
+}
+
+.hamburger {
+  display: block;
+  position: fixed;
+  right: 40px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #acb7c3;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
 .content-wrapper {
@@ -63,6 +90,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: auto 27px;
+  margin-top: 60px;
 }
 
 h1 {
@@ -74,9 +102,11 @@ h1 {
 
 .paragraph {
   color: #344563;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 22px;
   margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: 400px;
 }
 
 .lets-connect {
