@@ -54,7 +54,7 @@ body {
   background-color: #fff;
   margin-bottom: 10px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .project-btn2 a {
@@ -115,6 +115,7 @@ body {
   height: 550px;
 }
 
+
 .bio {
   font-style: normal;
   font-weight: 700;
@@ -149,26 +150,34 @@ body {
 }
 
 .project-main-wrapper {
-  background-color: #fff;
-  border-radius: 20px;
+  
+ 
   margin: auto 27px;
 }
+
+
 
 .project-container {
-  margin: auto 27px;
+ 
+  padding: 20px;
+  
+background-color: #fff;
+margin-bottom: 10%;
+border-radius: 20px;
+margin-top: 60px;
+  
 }
 
-.postcollection {
-  margin-top: 50px;
+
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.img-container {
-  width: 100%;
-}
 
-.snapshoot-img {
-  width: 100%;
-}
 
 .backend-dev {
   display: flex;
@@ -208,46 +217,34 @@ body {
   color: #344563;
 }
 
-.hypertext {
+
+
+.programming-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.programming-lang ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.lang {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  color: #6070ff;
+  letter-spacing: 0.03em;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 10px 10px;
-  border: none;
-  padding: 5px 20px;
 }
-
-.cascading {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 10px 10px;
-  border: none;
-  padding: 5px 10px;
-}
-
-.javascript {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-  color: #6070ff;
-  background-color: #ebebff;
-  border-radius: 10px 10px;
-  border: none;
-  padding: 5px 25px;
-  margin-bottom: 10px;
-}
-
 .project-review {
   font-style: normal;
   font-weight: 700;
@@ -266,23 +263,29 @@ body {
   justify-content: center;
 }
 
+
 .about-me {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-top: 20px;
+  margin-top: 10%;
+ 
 }
 
-.project-main-wrapperrr {
+
+.project-main-wrappertwo {
   background-color: #fff;
-  margin-top: 60px;
+  margin-top: 10%;
   border-top-right-radius: 80px;
+  padding: 20px;
 }
 
-.content-wrapperrr {
-  margin: auto 27px;
+.containertwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-links2 {
