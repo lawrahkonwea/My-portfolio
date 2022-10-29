@@ -153,6 +153,8 @@ body {
 }
 
 .project-container {
+  display: grid;
+  flex-direction: column;
   padding: 20px;
   background-color: #fff;
   margin-bottom: 10%;
@@ -262,7 +264,6 @@ body {
 .project-main-wrappertwo {
   background-color: #fff;
   margin-top: 10%;
-  border-top-right-radius: 80px;
   padding: 20px;
 }
 
