@@ -115,7 +115,6 @@ body {
   height: 550px;
 }
 
-
 .bio {
   font-style: normal;
   font-weight: 700;
@@ -150,34 +149,23 @@ body {
 }
 
 .project-main-wrapper {
-  
- 
   margin: auto 27px;
 }
 
-
-
 .project-container {
- 
   padding: 20px;
-  
-background-color: #fff;
-margin-bottom: 10%;
-border-radius: 20px;
-margin-top: 60px;
-  
+  background-color: #fff;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  margin-top: 60px;
 }
 
-
-
-.img-container{
+.img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
 }
-
-
 
 .backend-dev {
   display: flex;
@@ -217,8 +205,6 @@ margin-top: 60px;
   color: #344563;
 }
 
-
-
 .programming-lang {
   display: flex;
   align-items: center;
@@ -227,7 +213,7 @@ margin-top: 60px;
   margin-top: 10px;
 }
 
-.programming-lang ul{
+.programming-lang ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -245,6 +231,7 @@ margin-top: 60px;
   font-size: 12px;
   line-height: 16px;
 }
+
 .project-review {
   font-style: normal;
   font-weight: 700;
@@ -263,7 +250,6 @@ margin-top: 60px;
   justify-content: center;
 }
 
-
 .about-me {
   font-style: normal;
   font-weight: 700;
@@ -271,9 +257,7 @@ margin-top: 60px;
   line-height: 52px;
   color: #172b4d;
   margin-top: 10%;
- 
 }
-
 
 .project-main-wrappertwo {
   background-color: #fff;
@@ -282,7 +266,7 @@ margin-top: 60px;
   padding: 20px;
 }
 
-.containertwo{
+.containertwo {
   display: flex;
   justify-content: center;
   align-items: center;
