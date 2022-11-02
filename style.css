@@ -10,7 +10,11 @@
 }
 
 body {
+  background-color: #fff;
+}
+.colour{
   background-color: #e5e5e5;
+  margin-bottom: 30px;
 }
 
 .my-logos {
@@ -262,15 +266,12 @@ body {
 }
 
 .project-main-wrappertwo {
-  background-color: #fff;
   margin-top: 10%;
   padding: 20px;
 }
 
 .containertwo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 40px;
 }
 
 .social-links2 {
@@ -318,50 +319,96 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.contact{
-  background-color: #6070FF;
+.contact {
+  background-image: url(images/contact\ form\ shapes-mobile\ \(1\).png);
+  background-color: #6070ff;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
   border-top-left-radius: 80px;
-  padding: 119px px 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-}
-.contact-me{
-  display: flex;
-  justify-content: center;
-}
-.p-tag{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 114px 24px 8px 24px;
+  margin-top: 60px;
 }
 
-form{
-  
-  /* background-image: url(images/contact\ form\ shapes-mobile@2x.jpg); */
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebffff;
+}
+
+form {
   display: flex;
   flex-direction: column;
+  gap: 23px;
 }
-.form-btn{
-  width: 140px;
-  height: 48px;
-  color: #6070ff;
-}
-form input{
-  height: 36px;
+
+#text {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px 42px 15px 42px;
   border-radius: 8px;
 }
-form textarea{
-  background-color: #fff;
+
+#email {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px 42px 15px 42px;
+  border-radius: 8px;
+}
+
+#message {
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
-  
+  height: 150px;
+  padding: 15px 42px 15px 42px;
+}
+
+.form-btn {
+  width: 140px;
+  height: 48px;
+  color: #6070ff;
+  background: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+   border-radius: 8px;
+}
+
+.contact-hr {
+  background: #0d151e;
+  border-radius: 10px;
+  width: 134px;
+  height: 5px;
+  position: relative;
+  left: 60px;
 }
