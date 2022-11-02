@@ -12,7 +12,8 @@
 body {
   background-color: #fff;
 }
-.colour{
+
+.colour {
   background-color: #e5e5e5;
   margin-bottom: 30px;
 }
@@ -323,7 +324,7 @@ body {
 }
 
 .contact {
-  background-image: url(images/contact\ form\ shapes-mobile\ \(1\).png);
+  background-image: url(images/contact\ form\ shapes-mobile\ \(1\).png) ;
   background-color: #6070ff;
   background-size: contain;
   background-repeat: no-repeat;
@@ -401,7 +402,7 @@ form {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-   border-radius: 8px;
+  border-radius: 8px;
 }
 
 .contact-hr {
