@@ -365,7 +365,7 @@ form {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  padding: 15px 42px 15px 42px;
+  padding: 15px 29px 15px 13px;
   border-radius: 8px;
 }
 
@@ -376,7 +376,7 @@ form {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  padding: 15px 42px 15px 42px;
+  padding: 15px 29px 15px 13px;
   border-radius: 8px;
 }
 
@@ -389,7 +389,7 @@ form {
   line-height: 24px;
   color: #b3bac5;
   height: 150px;
-  padding: 15px 42px 15px 42px;
+  padding: 15px 29px 15px 13px;
 }
 
 .form-btn {
@@ -398,11 +398,27 @@ form {
   color: #6070ff;
   background: #fff;
   border: none;
+  cursor: pointer;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
   border-radius: 8px;
+}
+
+.form-btn:hover {
+  color:#fff;
+  background-color:#6070ff;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+.form-btn:active {
+  background-color: #172b4d;
+}
+
+.form-btn:disabled {
+  background-color: #fff;
 }
 
 .contact-hr {
@@ -411,5 +427,5 @@ form {
   width: 134px;
   height: 5px;
   position: relative;
-  left: 60px;
+  left: 100px;
 }
