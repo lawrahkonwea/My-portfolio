@@ -593,8 +593,7 @@ form {
   left: 100px;
 }
 
-@media only screen and (min-width: 768px) {
-
+@media screen and (min-width: 768px) {
   .img-bg {
     background-image: url("images/desktopimage.png");
     background-position: right top;
@@ -602,11 +601,12 @@ form {
     background-size: cover;
     margin: 50px 8px 76px 34px;
   }
-  .container{
+
+  .container {
     padding: 0px 70px;
   }
 
-  .bio{
+  .bio {
     padding-top: 170px;
     position: relative;
     right: 30px;
@@ -653,7 +653,7 @@ form {
   .paragraph {
     margin-right: 100px;
   }
-  
+
   .containertwo {
     display: flex;
     flex-direction: row;
