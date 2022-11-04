@@ -63,7 +63,7 @@ body {
   font-size: 17px;
   margin-bottom: 50px;
   cursor: pointer;
-  transition: background-color 1s, transform 1s; 
+  transition: background-color 1s, transform 1s;
 }
 
 .project-btn1:hover {
@@ -618,22 +618,21 @@ form {
     margin: 50px 8px 76px 34px;
   }
 
-  .hamburgers{
+  .hamburgers {
     display: none;
   }
 
-  .nav-items{
+  .nav-items {
     margin: auto 110px;
   }
 
-  .nav-items ul{
+  .nav-items ul {
     display: block;
   }
 
   .nav-list li {
     display: inline-block;
-    padding: 0 27px;
-    
+    padding: 0 27px; 
   }
 
   .container {
