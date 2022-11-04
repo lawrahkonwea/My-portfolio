@@ -43,7 +43,8 @@ body {
   margin-bottom: 50px;
   cursor: pointer;
 }
-.project-btn1{
+
+.project-btn1 {
   margin-top: 30px;
   border: 1px solid #396df2;
   padding: 10px 20px;
@@ -76,15 +77,15 @@ body {
 }
 
 .project-btn2:hover {
-    color: #fff;
-    background-color: #6070ff;
-    transition: 0.5s;
-    border: 1px solid #fff;
-  }
+  color: #fff;
+  background-color: #6070ff;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
 
-  .project-btn2:active {
-      background-color: #172b4d;
-  }
+.project-btn2:active {
+  background-color: #172b4d;
+}
 
 
 .nav-items {
@@ -177,7 +178,7 @@ body {
   gap: 30px;
 }
 
-.social-links li{
+.social-links li {
   width: 24px;
   height: 24px;
   color: #505f79;
@@ -196,7 +197,7 @@ body {
   border-radius: 20px; 
 }
 
-.project-container2{
+.project-container2 {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -205,7 +206,7 @@ body {
   margin-top: 60px;
 }
 
-.project-container3{
+.project-container3 {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -334,18 +335,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-}
-
-.lang {
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  color: #6070ff;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .project-review1 {
@@ -662,45 +651,45 @@ form {
   }
 
   .project-main-wrapper1 {
-  padding: 114px 142px;
-     gap: 142px; 
+    padding: 114px 142px;
+    gap: 142px; 
   }
 
   .paragraph {
-     margin-right: 100px;
+    margin-right: 100px;
   }
 
   .containertwo {
-      display: flex;
-      flex-direction: row;
-      padding: 142px;
-      gap: 24px;
-    }
+    display: flex;
+    flex-direction: row;
+    padding: 142px;
+    gap: 24px;
+  }
   
-    .project-main-wrapper {
-      display: flex;
+  .project-main-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    }
+  }
   
-    .social-media {
-      display: flex;
+  .social-media {
+    display: flex;
     flex-direction: column;
     margin-left: 80px;
   }
 
-    .social-links2 {
-        padding: 0px;
-    }
+  .social-links2 {
+    padding: 0px;
+  }
 
-    .langList {
+  .langList {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px;
     gap: 12px;
-    }
+  }
 
   .contact h2 {
     margin: 130px 319px 0px 320px;
@@ -739,9 +728,3 @@ form {
   }
 
 }
-
-
-  
-
-  
-
