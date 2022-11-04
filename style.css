@@ -427,8 +427,9 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .about-list {
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px 0 20px;
 }
 
 .containertwo {
@@ -603,7 +604,7 @@ form {
   }
 
   .container {
-    padding: 0px 70px;
+    padding: 0 70px;
   }
 
   .bio {
@@ -616,7 +617,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 46px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .project-container2 {
@@ -687,15 +688,15 @@ form {
   }
 
   .contact h2 {
-    margin: 130px 319px 0px 320px;
+    margin: 130px 319px 0 320px;
   }
 
   .contact p {
-    margin: 12px 435px 0px 436px;
+    margin: 12px 435px 0 436px;
   }
 
   #text {
-    margin: 12px 497px 0px 496px;
+    margin: 12px 497px 0 496px;
     border-radius: 0;
   }
 
@@ -705,12 +706,12 @@ form {
   }
 
   #message {
-    margin: 12px 497px 0px 496px;
+    margin: 12px 497px 0 496px;
     border-radius: 0;
   }
 
   .form-btn {
-    margin: 0px 0px 139px 649px;
+    margin: 0 0 139px 649px;
   }
 
   .project-review {
@@ -721,5 +722,4 @@ form {
   .contact-hr {
     display: none;
   }
-
 }
