@@ -193,7 +193,7 @@ body {
   padding: 20px;
   background-color: #fff;
   margin-top: 60px;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .project-container2 {
@@ -214,7 +214,7 @@ body {
   margin-top: 60px;
 }
 
-.project-container4{
+.project-container4 {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -648,9 +648,9 @@ form {
 
   .project-main-wrapper1 {
     padding: 114px 142px;
-    gap: 142px; 
+    gap: 142px;
   }
-
+  
   .paragraph {
     margin-right: 100px;
   }
@@ -674,9 +674,9 @@ form {
     flex-direction: column;
     margin-left: 80px;
   }
-
+  
   .social-links2 {
-    padding: 0px;
+    padding: 0;
   }
 
   .langList {
@@ -701,7 +701,7 @@ form {
   }
 
   #email {
-    margin: 12px 497px 0px 496px;
+    margin: 12px 497px 0 496px;
     border-radius: 0;
   }
 
