@@ -62,6 +62,12 @@ body {
   font-size: 17px;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: background-color 1s, transform 1s; 
+}
+
+.project-btn1:hover {
+  background-color: blue;
+  opacity: 0.5;
 }
 
 .project-btn a {
