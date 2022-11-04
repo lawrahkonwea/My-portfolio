@@ -87,7 +87,6 @@ body {
   background-color: #172b4d;
 }
 
-
 .nav-items {
   display: flex;
   justify-content: space-between;
@@ -248,10 +247,6 @@ body {
   gap: 10px;
 }
 
-.access-project {
-  width: 90%;
-}
-
 .access-project p {
   font-weight: 400;
   font-size: 15px;
@@ -380,8 +375,8 @@ body {
 
 .social-media {
   display: flex;
-    flex-direction: column;
-    margin-left: 80px;
+  flex-direction: column;
+  margin-left: 80px;
 }
 
 .language-title {
@@ -658,7 +653,7 @@ form {
   .paragraph {
     margin-right: 100px;
   }
-
+  
   .containertwo {
     display: flex;
     flex-direction: row;
