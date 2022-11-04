@@ -391,7 +391,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-} 
+}
 
 .list {
   padding: 0;
@@ -448,7 +448,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+}
 
 .language h2 {
   color: #000;
@@ -650,7 +650,7 @@ form {
     padding: 114px 142px;
     gap: 142px;
   }
-  
+
   .paragraph {
     margin-right: 100px;
   }
@@ -661,20 +661,20 @@ form {
     padding: 142px;
     gap: 24px;
   }
-  
+
   .project-main-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
   }
-  
+
   .social-media {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
   }
-  
+
   .social-links2 {
     padding: 0;
   }
