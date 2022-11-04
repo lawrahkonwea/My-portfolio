@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Lexend+Deca:wght@300&family=Poppins:wght@300;400&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Lexend+Deca:wght@700&family=Poppins:wght@300;400&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Lexend+Deca:wght@300&family=Poppins:ital,wght@0,400;1,700&family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -336,9 +337,10 @@ body {
   color: #172b4d;
   margin-top: 12px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 700 !important;
+  font-size: 32px !important;
   line-height: 44px;
+  font-family: sans-serif, 'Poppins' !important;
 }
 
 .project-info1 {
@@ -603,6 +605,24 @@ form {
     margin: 50px 8px 76px 34px;
   }
 
+  .hamburgers{
+    display: none;
+  }
+
+  .nav-items{
+    margin: auto 110px;
+  }
+
+  .nav-items ul{
+    display: block;
+  }
+
+  .nav-list li {
+    display: inline-block;
+    padding: 0 27px;
+    
+  }
+
   .container {
     padding: 0 70px;
   }
@@ -688,7 +708,7 @@ form {
   }
 
   .contact h2 {
-    margin: 130px 319px 0 320px;
+    margin: 130px 330px 0 320px;
   }
 
   .contact p {
