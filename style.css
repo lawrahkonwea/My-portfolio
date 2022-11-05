@@ -140,7 +140,7 @@ body {
 }
 
 .container {
-  margin: auto 27px;
+  margin: 0 27px;
   line-height: 20px;
 }
 
@@ -163,7 +163,7 @@ body {
   right: 30px;
 }
 
-.paragraph {
+.paragraph p {
   font-size: 16px;
   font-weight: 400px;
   margin-top: 22px;
@@ -258,7 +258,8 @@ body {
 
 .ul {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  align-items: center;
 }
 
 .access-project p {
@@ -350,10 +351,9 @@ body {
   color: #172b4d;
   margin-top: 12px;
   font-style: normal;
-  font-weight: 700 !important;
-  font-size: 32px !important;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 44px;
-  font-family: sans-serif, 'Poppins' !important;
 }
 
 .project-info1 {
@@ -373,9 +373,8 @@ body {
   justify-content: center;
 }
 
-.about-me {
+.about-me h1 {
   color: #172b4d;
-  line-height: 52px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -424,6 +423,8 @@ body {
 
 .skills {
   display: flex;
+  width: 100%;
+  margin-bottom: 10%;
   justify-content: space-between;
   align-items: center;
 }
@@ -441,10 +442,6 @@ body {
   align-items: center;
   width: 24px;
   height: 24px;
-}
-
-.about-list {
-  padding: 0 20px 0 20px;
 }
 
 .containertwo {
@@ -511,6 +508,9 @@ body {
   gap: 15px;
   padding: 114px 24px 8px 24px;
   margin-top: 60px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
 }
 
 .contact h2 {
@@ -531,6 +531,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 23px;
+}
+
+.snapshoot-img {
+  width: 80%;
 }
 
 #text {
@@ -567,6 +571,10 @@ form {
   padding: 15px 29px 15px 13px;
 }
 
+.about-list {
+  margin: auto 25px;
+}
+
 .form-btn {
   width: 140px;
   height: 48px;
@@ -586,10 +594,6 @@ form {
   background-color: #6070ff;
   transition: 0.5s;
   border: 1px solid #fff;
-}
-
-.snapshoot-img {
-  height: 300px;
 }
 
 .form-btn:active {
@@ -637,19 +641,28 @@ form {
 
   .container {
     padding: 0 70px;
+    margin: 0;
   }
 
   .bio {
     padding-top: 170px;
     position: relative;
     right: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .project-container1 {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    gap: 46px;
-    margin-top: 0;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .about-list {
+    width: 100%;
   }
 
   .project-container2 {
@@ -658,7 +671,7 @@ form {
     flex-direction: row-reverse;
     justify-content: space-between;
     border-radius: 24px;
-    gap: 46px;
+    gap: 25px;
   }
 
   .project-container3 {
@@ -679,16 +692,13 @@ form {
   }
 
   .project-main-wrapper1 {
-    padding: 114px 142px;
+    padding: 10px 142px 100px 142px;
     gap: 142px;
-  }
-
-  .paragraph {
-    margin-right: 100px;
   }
 
   .containertwo {
     display: flex;
+    align-items: center;
     flex-direction: row;
     padding: 142px;
     gap: 24px;
@@ -699,6 +709,20 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+  }
+
+  .postcollection1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project-review1 {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .snapshoot-img {
+    width: 100%;
   }
 
   .social-media {
@@ -719,36 +743,58 @@ form {
     gap: 12px;
   }
 
-  .contact h2 {
-    margin: 130px 330px 0 320px;
-  }
-
-  .contact p {
-    margin: 12px 435px 0 436px;
-  }
-
-  #text {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  #email {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  #message {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  .form-btn {
-    margin: 0 0 139px 649px;
-  }
-
   .project-review {
     display: flex;
     flex-direction: row;
+  }
+
+  .footer-paragraph {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin: auto;
+    width: 60%;
+  }
+
+  .footer-paragraph p {
+    margin-bottom: 15px;
+  }
+
+  input,
+  textarea {
+    margin: auto;
+    width: 50%;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+
+  .contact-div {
+    width: 65%;
+    margin: auto;
+  }
+
+  .contact h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  #text,
+  #email,
+  #message {
+    border-radius: 0;
   }
 
   .contact-hr {
