@@ -717,7 +717,7 @@ form {
   }
 
   .project-review1 {
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
   }
 
@@ -760,11 +760,12 @@ form {
     margin-bottom: 15px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     margin: auto;
     width: 50%;
   }
-  
+
   .btn-container {
     display: flex;
     justify-content: center;
@@ -790,7 +791,9 @@ form {
     margin-bottom: 12px;
   }
 
-  #text,#email,#message {
+  #text,
+  #email,
+  #message {
     border-radius: 0;
   }
 
