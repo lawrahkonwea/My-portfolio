@@ -163,7 +163,7 @@ body {
   right: 30px;
 }
 
-.paragraph {
+.paragraph p {
   font-size: 16px;
   font-weight: 400px;
   margin-top: 22px;
@@ -258,7 +258,8 @@ body {
 
 .ul {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  align-items: center;
 }
 
 .access-project p {
@@ -373,9 +374,9 @@ body {
   justify-content: center;
 }
 
-.about-me {
+.about-me h1 {
   color: #172b4d;
-  line-height: 52px;
+  /* line-height: 52px; */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -424,6 +425,8 @@ body {
 
 .skills {
   display: flex;
+  width: 100%;
+  margin-bottom: 10%;
   justify-content: space-between;
   align-items: center;
 }
@@ -441,10 +444,6 @@ body {
   align-items: center;
   width: 24px;
   height: 24px;
-}
-
-.about-list {
-  padding: 0 20px 0 20px;
 }
 
 .containertwo {
@@ -533,6 +532,11 @@ form {
   gap: 23px;
 }
 
+.snapshoot-img {
+  /* height: 300px; */
+  width: 80%;
+}
+
 #text {
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -567,6 +571,10 @@ form {
   padding: 15px 29px 15px 13px;
 }
 
+.about-list {
+  margin: auto 25px;
+}
+
 .form-btn {
   width: 140px;
   height: 48px;
@@ -586,10 +594,6 @@ form {
   background-color: #6070ff;
   transition: 0.5s;
   border: 1px solid #fff;
-}
-
-.snapshoot-img {
-  height: 300px;
 }
 
 .form-btn:active {
@@ -647,9 +651,15 @@ form {
 
   .project-container1 {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    gap: 46px;
-    margin-top: 0;
+    width: 100%;
+    gap: 25px;
+    /* margin-top: 0; */
+  }
+
+  .about-list {
+    width: 100%;
   }
 
   .project-container2 {
@@ -683,12 +693,9 @@ form {
     gap: 142px;
   }
 
-  .paragraph {
-    margin-right: 100px;
-  }
-
   .containertwo {
     display: flex;
+    align-items: center;
     flex-direction: row;
     padding: 142px;
     gap: 24px;
@@ -699,6 +706,21 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+  }
+
+  .postcollection1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project-review1 {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .snapshoot-img {
+    /* height: 300px; */
+    width: 100%;
   }
 
   .social-media {
@@ -719,36 +741,25 @@ form {
     gap: 12px;
   }
 
-  .contact h2 {
-    margin: 130px 330px 0 320px;
-  }
-
-  .contact p {
-    margin: 12px 435px 0 436px;
-  }
-
-  #text {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  #email {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  #message {
-    margin: 12px 497px 0 496px;
-    border-radius: 0;
-  }
-
-  .form-btn {
-    margin: 0 0 139px 649px;
-  }
-
   .project-review {
     display: flex;
     flex-direction: row;
+  }
+
+  .footer-paragraph {
+    margin: auto;
+    width: 50%;
+  }
+
+  input, textarea {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-hr {
