@@ -19,7 +19,7 @@ This is a project about me, works i have done and links to my social media handl
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://lawrahkonwea.github.io/My-portfolio/)
 
 
 ## Getting Started
