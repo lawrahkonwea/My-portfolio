@@ -7,7 +7,7 @@ portfolio
  master
 
 > Description the project.
-This is a project about me, works i have done and links to my social media handles to connect with people. 
+This is a project about me, works i have done and links to my social media handles to connect with people. I created a loom video explaining the concepts of this project, and technologies used in building it, effects and many more. 
 
 ## Built With
 - Html
