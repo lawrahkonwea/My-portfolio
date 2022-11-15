@@ -872,7 +872,19 @@ form {
     margin: auto 27px;
   }
 
-
+  .hamburgers.active .bar:nth-child(2) { 
+    opacity: 0; 
+  } 
+  
+  .hamburgers.active .bar:nth-child(1) { 
+    transform: translateY(8px) rotate(45deg); 
+    background-color: #fff; 
+  } 
+  
+  .hamburgers.active .bar:nth-child(3) { 
+    transform: translateY(-8px) rotate(-45deg); 
+    background-color: #fff; 
+  } 
 
   .bio {
     width: 70%;
