@@ -10,26 +10,25 @@
 </head>
 
 <body>
-  <div class="colour">
-    <main class="main-wrapper">
       <header>
-        <nav class="nav-items">
-          <div class="my-logos">
-            <a class="logos" href="#">My Logo</a></span>
-          </div>
-          <ul class="nav-list">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <nav class="navbar">
+          <a class="nav-branding" href="#" >My Logo</a>
+
+          <ul class="nav-menu">
+            <li class="nav"><a href="#myportfolio">Portfolio</a></li>
+            <li class="nav"><a href="#myabout">About</a></li>
+            <li class="nav"><a href="#mycontact">Contact</a></li>
           </ul>
           <div class="hamburgers">
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </nav>
       </header>
-      <section class="img-bg">
+
+    <main class="coverAll-con">
+      <section class="img-bg" id="myportfolio">
         <div class="container">
           <div class="bio">
             <h1>I'm Amaka Glad to see you! </h1>
@@ -51,9 +50,7 @@
             </ul>
           </div>
         </div>
-      </section>
-    </main>
-
+      </section> 
     <section class="project-main-wrapper1">
       <div class="project-container1">
 
@@ -185,11 +182,10 @@
         </div>
       </div>
     </section>
-  </div>
 
 
 
-  <section class="containertwo">
+  <section class="containertwo" id="myabout">
     <div class="project-main-wrapper">
       <div class="about-me">
         <h1>About Myself</h1>
@@ -203,7 +199,7 @@
         </p>
       </div>
       <div class="social_media">
-        <h2 class="lets-connect">LET'S CONNECT</h2>
+        <h3 class="lets-connect">LET'S CONNECT</h3>
         <ul class="social-links2">
           <li><a href="https://twitter.com/lawrah_xo"><img src="images/twitter.jpg" alt="twitter"></a></li>
           <li><a href="https://www.linkedin.com/in/laura-konwea-99647a23a/"><img src="images/Linkedin icon.jpg"
@@ -222,13 +218,13 @@
       </li>
       <ul class="langList">
         <li class="lang">
-          <img src="images/Ellipse 1.png" alt="ellipse image">
+          <img src="images/Ellipse 1.png" alt="">
 
         <li class="lang">
-          <img src="images/Ellipse 1 (1).png" alt="ellipse image">
+          <img src="images/Ellipse 1 (1).png" alt="">
         </li>
         <li class="lang">
-          <img src="images/Ellipse 1 (2).png" alt="ellipse image">
+          <img src="images/Ellipse 1 (2).png" alt="">
         </li>
       </ul>
       <li class="skills">
@@ -244,26 +240,30 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="mycontact">
     <div class="contact-div">
     <h2>Contact Me</h2>
     <div class="footer-paragraph">
     <p>If you have an application you are interested in developing, a feature that you need built or a project that
       needs coding. I’d love to help with it </p>
     </div>
-    <form action="https://formspree.io/f/xgeqpkgk" method="post">
-      <label for="text" class="visuallyhidden">Name: </label>
-      <input type="text" name="text" id="text" placeholder="Enter name" maxlength="30" required>
-      <label for="email" class="visuallyhidden">Email: </label>
-      <input type="email" name="email" id="email" placeholder="Enter email" required>
-      <label for="formMessage" class="visuallyhidden">Message: </label>
-      <textarea name="formMessage" id="message" placeholder="Write your message here" maxlength="500"
-        required></textarea>
+        <form action="https://formspree.io/f/xgeqpkgk" method="post">
+          <label for="text" class="visuallyhidden">Name: </label>
+          <input type="text" name="text" id="text" placeholder="Enter name" maxlength="30" required>
+          <label for="email" class="visuallyhidden">Email: </label>
+          <input type="email" name="email" id="email" placeholder="Enter email" required>
+          <label for="formMessage" class="visuallyhidden">Message: </label>
+          <textarea name="formMessage" id="message" placeholder="Write your message here" maxlength="500"
+            required></textarea>
       <div class="btn-container"><button class="form-btn">Get in Touch</button></div>
     </form>
     <hr class="contact-hr">
    </div>
+   
   </section>
+</main>
+
+  <script src="index.js" defer></script>
 </body>
 
 </html>
