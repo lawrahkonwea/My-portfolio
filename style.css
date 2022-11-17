@@ -904,7 +904,7 @@ form {
     display: block;
   }
 
-  .hamburgers.active+nav a {
+  .hamburgers.active + nav a {
     color: #fff;
   }
 
@@ -964,7 +964,6 @@ form {
 
 .modal-container {
   display: none;
-  position: absolute;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -1003,7 +1002,6 @@ form {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
-
 }
 
 .source-div {
@@ -1015,15 +1013,15 @@ form {
 
 .modal-btn {
   margin-top: 20px;
-  border: 1px solid #396DF2;
+  border: 1px solid #396df2;
   border-radius: 8px;
   padding: 5px 10px;
   gap: 10px;
-  background: #FFF;
+  background: #fff;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 #remove-btn {
@@ -1039,7 +1037,6 @@ form {
   color: red;
   background-color: white;
   cursor: pointer;
-
 }
 
 .modal-dot {

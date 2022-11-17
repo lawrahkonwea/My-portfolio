@@ -14,7 +14,7 @@ for (let i = 0; i < navLinks.length; i += 1) {
   });
 }
 
-// pop-up window 
+// pop-up window
 
 const project = [
   {
@@ -71,145 +71,138 @@ const project = [
   },
 ];
 
-
-const div1 = document.createElement('div')
+const div1 = document.createElement('div');
 
 function modalOpen(id) {
-  
-  div1.className = 'modal-container'
-  document.body.appendChild(div1)
+  div1.className = 'modal-container';
+  document.body.appendChild(div1);
 
-div1.style.display = 'flex';  
-const div2 = document.createElement('div')
-div2.className = "modal-header"
-div1.appendChild(div2)
+  div1.style.display = 'flex';
+  const div2 = document.createElement('div');
+  div2.className = 'modal-header';
+  div1.appendChild(div2);
 
-const header = document.createElement('h2')
-header.textContent = `${project[id].name}`
-div2.appendChild(header);
+  const header = document.createElement('h2');
+  header.textContent = `${project[id].name}`;
+  div2.appendChild(header);
 
-const delBtn = document.createElement('button')
-delBtn.innerHTML = `<button id="remove-btn">&times;</button>`
-delBtn.id = 'remove-btn'
-delBtn.addEventListener('click', () => {
-div1.classList.remove('active-modal');
-div1.innerHTML = ' ';
-div1.style.display = 'none';
-});
-div2.appendChild(delBtn);
+  const delBtn = document.createElement('button');
+  delBtn.innerHTML = '<button id="remove-btn">&times;</button>';
+  delBtn.id = 'remove-btn';
+  delBtn.addEventListener('click', () => {
+    div1.classList.remove('active-modal');
+    div1.innerHTML = ' ';
+    div1.style.display = 'none';
+  });
+  div2.appendChild(delBtn);
 
-const ul = document.createElement('ul')
-ul.className = 'ul-con'
-div1.appendChild(ul)
+  const ul = document.createElement('ul');
+  ul.className = 'ul-con';
+  div1.appendChild(ul);
 
-const list = document.createElement('li')
-list.className = 'canopy'
-list.textContent = `${project[0].li1}`
-ul.appendChild(list)
+  const list = document.createElement('li');
+  list.className = 'canopy';
+  list.textContent = `${project[0].li1}`;
+  ul.appendChild(list);
 
-const lio = document.createElement('li');
-lio.className = 'modal-list';
-lio.innerHTML = '<span class="modal-dot">.</span>';
-ul.appendChild(lio);
+  const lio = document.createElement('li');
+  lio.className = 'modal-list';
+  lio.innerHTML = '<span class="modal-dot">.</span>';
+  ul.appendChild(lio);
 
-const list2 = document.createElement('li')
-list2.className = 'backend1'
-list2.textContent = `${project[0].li2}`
-ul.appendChild(list2)
+  const list2 = document.createElement('li');
+  list2.className = 'backend1';
+  list2.textContent = `${project[0].li2}`;
+  ul.appendChild(list2);
 
-const lio2 = document.createElement('li');
-lio2.className = 'modal-list';
-lio2.innerHTML = '<span class="modal-dot">.</span>';
-ul.appendChild(lio2);
+  const lio2 = document.createElement('li');
+  lio2.className = 'modal-list';
+  lio2.innerHTML = '<span class="modal-dot">.</span>';
+  ul.appendChild(lio2);
 
-const list3 = document.createElement('li')
-list3.className = 'backend2'
-list3.textContent = `${project[0].li3}`
-ul.appendChild(list3)
+  const list3 = document.createElement('li');
+  list3.className = 'backend2';
+  list3.textContent = `${project[0].li3}`;
+  ul.appendChild(list3);
 
-const imageCon = document.createElement('div')
-imageCon.className = 'img-con'
-div1.appendChild (imageCon)
+  const imageCon = document.createElement('div');
+  imageCon.className = 'img-con';
+  div1.appendChild(imageCon);
 
-const modalImage = document.createElement('img')
-modalImage.className = 'modal-image'
-modalImage.setAttribute(
-  'src',project[id].card_image,
-);
-imageCon.appendChild(modalImage)
+  const modalImage = document.createElement('img');
+  modalImage.className = 'modal-image';
+  modalImage.setAttribute(
+    'src', project[id].card_image,
+  );
+  imageCon.appendChild(modalImage);
 
-const div3 = document.createElement('div')
-div3.className = 'description-con'
-div1.appendChild(div3)
+  const div3 = document.createElement('div');
+  div3.className = 'description-con';
+  div1.appendChild(div3);
 
-const paragraph = document.createElement('p')
-paragraph.className = 'describe'
-paragraph.textContent = `${project[0].description}`
-div3.appendChild(paragraph)
+  const paragraph = document.createElement('p');
+  paragraph.className = 'describe';
+  paragraph.textContent = `${project[0].description}`;
+  div3.appendChild(paragraph);
 
-const div5 = document.createElement('div')
-div5.className = 'description-div'
-div3.appendChild(div5)
+  const div5 = document.createElement('div');
+  div5.className = 'description-div';
+  div3.appendChild(div5);
 
-const ul2 = document.createElement('ul')
-ul2.className = 'languagess'
-div5.appendChild(ul2)
+  const ul2 = document.createElement('ul');
+  ul2.className = 'languagess';
+  div5.appendChild(ul2);
 
-const langList = document.createElement('li')
-langList.className = 'lang1'
-langList.textContent = `${project[0].li4}`
-ul2.appendChild(langList)
+  const langList = document.createElement('li');
+  langList.className = 'lang1';
+  langList.textContent = `${project[0].li4}`;
+  ul2.appendChild(langList);
 
-const langList2 = document.createElement('li')
-langList2.className = 'lang1'
-langList2.textContent = `${project[0].li5}`
-ul2.appendChild(langList2)
+  const langList2 = document.createElement('li');
+  langList2.className = 'lang1';
+  langList2.textContent = `${project[0].li5}`;
+  ul2.appendChild(langList2);
 
-const langList3 = document.createElement('li')
-langList3.className = 'lang1'
-langList3.textContent = `${project[0].li6}`
-ul2.appendChild(langList3)
+  const langList3 = document.createElement('li');
+  langList3.className = 'lang1';
+  langList3.textContent = `${project[0].li6}`;
+  ul2.appendChild(langList3);
 
-const div4 = document.createElement('div')
-div4.className = 'source-div'
-div5.appendChild(div4)
+  const div4 = document.createElement('div');
+  div4.className = 'source-div';
+  div5.appendChild(div4);
 
-const liveButton = document.createElement('button')
-liveButton.className = 'modal-btn'
-liveButton.innerHTML = `See live <img src="images/vector2 (2).png">`;
-div4.appendChild(liveButton)
+  const liveButton = document.createElement('button');
+  liveButton.className = 'modal-btn';
+  liveButton.innerHTML = 'See live <img src="images/vector2 (2).png" alt =\'\'>';
+  div4.appendChild(liveButton);
 
-const onlineButton = document.createElement('button')
-onlineButton.className = 'modal-btn'
-onlineButton.innerHTML = `See source <img src="images/vector.png">`;
-div4.appendChild(onlineButton)
+  const onlineButton = document.createElement('button');
+  onlineButton.className = 'modal-btn';
+  onlineButton.innerHTML = 'See source <img src="images/vector.png" alt =\'\'>';
+  div4.appendChild(onlineButton);
 }
 
 const openModal = document.getElementById('cta');
-const mainModal = document.getElementById('modal-container');
 
 openModal.addEventListener('click', () => {
   modalOpen(0);
 });
 
-const openSecondModal = document.getElementById('cta2')
+const openSecondModal = document.getElementById('cta2');
 
 openSecondModal.addEventListener('click', () => {
-  modalOpen(1)
-})
+  modalOpen(1);
+});
 
-const openThirdModal = document.getElementById('cta3')
+const openThirdModal = document.getElementById('cta3');
 
 openThirdModal.addEventListener('click', () => {
-  modalOpen(2)
-})
+  modalOpen(2);
+});
 
-const openFourthModal = document.getElementById('cta4')
+const openFourthModal = document.getElementById('cta4');
 
 openFourthModal.addEventListener('click', () => {
-  modalOpen(3)
-})
-
-
-
-
+  modalOpen(3);
+});
