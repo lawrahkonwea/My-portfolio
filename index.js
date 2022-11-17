@@ -23,7 +23,7 @@ const project = [
     li2: 'Back End dev',
     li3: '2015',
     card_image: 'images/webversion.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     li4: 'Html',
     li5: 'Css',
     li6: 'Javascript',
@@ -73,10 +73,13 @@ const project = [
 
 
 const div1 = document.createElement('div')
-div1.className = 'modal-container'
-document.body.appendChild(div1)
 
 function modalOpen(id) {
+  
+  div1.className = 'modal-container'
+  document.body.appendChild(div1)
+
+div1.style.display = 'flex';  
 const div2 = document.createElement('div')
 div2.className = "modal-header"
 div1.appendChild(div2)
@@ -90,7 +93,8 @@ delBtn.innerHTML = `<button id="remove-btn">&times;</button>`
 delBtn.id = 'remove-btn'
 delBtn.addEventListener('click', () => {
 div1.classList.remove('active-modal');
-div1.innerHTML = '';
+div1.innerHTML = ' ';
+div1.style.display = 'none';
 });
 div2.appendChild(delBtn);
 
@@ -172,7 +176,7 @@ div5.appendChild(div4)
 
 const liveButton = document.createElement('button')
 liveButton.className = 'modal-btn'
-liveButton.textContent = `${project[0].live_button}`
+liveButton.innerHTML = `See live <img src="images/vector2 (2).png">`;
 div4.appendChild(liveButton)
 
 const onlineButton = document.createElement('button')
