@@ -183,6 +183,139 @@ function modalOpen(id) {
   div4.appendChild(onlineButton);
 }
 
+const mainWrapper = document.querySelector('.project-main-wrapper1');
+const div = document.createElement('div');
+div.innerHTML = `
+<div class="project-container1">
+        <picture>
+          <source media="(min-width: 768px )" srcset="images/webversion.png">
+          <source media="(max-width: 768px )" srcset="images/Snapshoot Portfolio 1.png">
+          <img class="snapshoot-img" src="images/Snapshoot Portfolio 1.png" alt="project-image">
+        </picture>
+        <div class="postcollection1">
+          <div class="project-review1">
+            <h3>Tonic</h3>
+          </div>
+          <ul class="ul">
+            <li><span class="canopy">CANOPY</span></li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend1">Back End Dev</li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend2">2015</li>
+          </ul>
+          <div class="access-project">
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          </div>
+          <ul class="languagess">
+            <li class="lang1">html</li>
+            <li class="lang1">css</li>
+            <li class="lang1">javaScript</li>
+          </ul>
+          <div>
+            <button class="project-btn" id="cta"><a href="#">See Project</a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-container2">
+
+        <picture>
+          <source media="(min-width: 768px )" srcset="images/webversion2.png">
+          <source media="(max-width: 768px )" srcset="images/Snapshoot Portfolio 1.png">
+          <img class="snapshoot-img" src="images/Snapshoot Portfolio (2).png" alt="project-image">
+        </picture>
+        <div class="postcollection1">
+          <div class="project-review1">
+            <h3>Multi-Post Stories</h3>
+          </div>
+          <ul class="ul">
+            <li><span class="canopy">CANOPY</span></li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend1">Back End Dev</li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend2">2015</li>
+          </ul>
+          <div class="access-project">
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          </div>
+          <ul class="languagess">
+            <li class="lang1">html</li>
+            <li class="lang1">css</li>
+            <li class="lang1">javaScript</li>
+          </ul>
+          <div>
+            <button class="project-btn" id="cta2"><a href="#">See Project</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container3">
+
+        <picture>
+          <source media="(min-width: 768px )" srcset="images/webversion3.png">
+          <source media="(max-width: 768px )" srcset="images/Snapshoot Portfolio 1.png">
+          <img class="snapshoot-img" src="images/Snapshoot Portfolio (3).png" alt="project-image">
+        </picture>
+        <div class="postcollection1">
+          <div class="project-review1">
+            <h3>Tonic</h3>
+          </div>
+          <ul class="ul">
+            <li><span class="canopy">CANOPY</span></li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend1">Back End Dev</li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend2">2015</li>
+          </ul>
+          <div class="access-project">
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          </div>
+          <ul class="languagess">
+            <li class="lang1">html</li>
+            <li class="lang1">css</li>
+            <li class="lang1">javaScript</li>
+          </ul>
+          <div>
+            <button class="project-btn" id="cta3"><a href="#">See Project</a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-container4">
+        <picture>
+          <source media="(min-width: 768px )" srcset="images/webversion4.png">
+          <source media="(max-width: 768px )" srcset="images/Snapshoot Portfolio 1.png">
+          <img class="snapshoot-img" src="images/Snapshoot Portfolio (4).png" alt="project-image">
+        </picture>
+        <div class="postcollection1">
+          <div class="project-review1">
+            <h3>Tonic</h3>
+          </div>
+          <ul class="ul">
+            <li><span class="canopy">CANOPY</span></li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend1">Back End Dev</li>
+            <img src="images/Counter (1).png" alt="">
+            <li class="backend2">2015</li>
+          </ul>
+          <div class="access-project">
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+          </div>
+          <ul class="languagess">
+            <li class="lang1">html</li>
+            <li class="lang1">css</li>
+            <li class="lang1">javaScript</li>
+          </ul>
+          <div>
+            <button class="project-btn" id="cta4"><a href="#">See Project</a></button>
+          </div>
+        </div>
+      </div>
+`;
+mainWrapper.appendChild(div);
+
 const openModal = document.getElementById('cta');
 
 openModal.addEventListener('click', () => {
