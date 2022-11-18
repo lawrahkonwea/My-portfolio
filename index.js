@@ -347,7 +347,7 @@ const userName = document.getElementById('text');
 const mail = document.getElementById('email');
 const textArea = document.getElementById('message');
 const form = document.querySelector('form');
-const errorMsg = document.querySelector('.div-span');
+const errorMsg = document.querySelector('.error');
 
 form.addEventListener('click', (event) => {
   if (mail.value !== mail.value.toLowerCase()) {

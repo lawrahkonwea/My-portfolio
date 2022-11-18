@@ -568,7 +568,7 @@ form {
   width: 100%;
 }
 
-#text {
+input {
   background: #fff;
   border: 1px solid #cfd8dc;
   color: #172b4d;
@@ -579,18 +579,7 @@ form {
   border-radius: 8px;
 }
 
-#email {
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  color: #172b4d;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  padding: 15px 29px 15px 13px;
-  border-radius: 8px;
-}
-
-#message {
+textarea {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -1083,15 +1072,20 @@ form {
 input:valid {
   border: 2px solid green;
 }
-
 input:focus:invalid {
-  border: 1px solid red;
+  border: 3px solid red;
+}
+textarea:focus:invalid {
+  border: 3px solid red;
 }
 
-.div-span {
+textarea:focus:valid {
+  border: 2px solid green;
+}
+
+.error {
+  font-size: 17px;
   color: white;
   background-color: red;
-  width: 100%;
-  margin-bottom: 10%;
   border-radius: 5px;
 }
