@@ -1071,9 +1071,11 @@ textarea {
 input:valid {
   border: 3px solid green;
 }
+
 input:focus:invalid {
   border: 3px solid red;
 }
+
 textarea:focus:invalid {
   border: 3px solid red;
 }
@@ -1087,5 +1089,4 @@ textarea:focus:valid {
   color: white;
   background-color: red;
   border-radius: 5px;
-
 }

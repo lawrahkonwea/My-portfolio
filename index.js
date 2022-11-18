@@ -342,10 +342,7 @@ openFourthModal.addEventListener('click', () => {
 
 // javascript form validation
 
-
-const userName = document.getElementById('text');
 const mail = document.getElementById('email');
-const textArea = document.getElementById('message');
 const form = document.querySelector('form');
 const errorMsg = document.querySelector('.error');
 
@@ -357,8 +354,3 @@ form.addEventListener('click', (event) => {
     errorMsg.textContent = '';
   }
 });
-const userInfo = {
-  username: '',
-  email: '',
-  textArea: '',
-};
