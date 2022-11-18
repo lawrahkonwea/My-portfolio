@@ -568,7 +568,7 @@ form {
   width: 100%;
 }
 
-#text {
+input {
   background: #fff;
   border: 1px solid #cfd8dc;
   color: #172b4d;
@@ -579,18 +579,7 @@ form {
   border-radius: 8px;
 }
 
-#email {
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  color: #172b4d;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
-  padding: 15px 29px 15px 13px;
-  border-radius: 8px;
-}
-
-#message {
+textarea {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -866,8 +855,7 @@ form {
     margin-bottom: 12px;
   }
 
-  #text,
-  #email,
+  input,
   #message {
     border-radius: 0;
   }
@@ -1076,4 +1064,29 @@ form {
 
 .modal-image:hover {
   transform: scale(1.1);
+}
+
+/* form validation */
+
+input:valid {
+  border: 3px solid green;
+}
+
+input:focus:invalid {
+  border: 3px solid red;
+}
+
+textarea:focus:invalid {
+  border: 3px solid red;
+}
+
+textarea:focus:valid {
+  border: 3px solid green;
+}
+
+.error {
+  font-size: 17px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
 }

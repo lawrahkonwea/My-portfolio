@@ -339,3 +339,18 @@ const openFourthModal = document.getElementById('cta4');
 openFourthModal.addEventListener('click', () => {
   modalOpen(3);
 });
+
+// javascript form validation
+
+const mail = document.getElementById('email');
+const form = document.querySelector('form');
+const errorMsg = document.querySelector('.error');
+
+form.addEventListener('click', (event) => {
+  if (mail.value !== mail.value.toLowerCase()) {
+    errorMsg.textContent = 'Email address must be in lowercase';
+    event.preventDefault();
+  } else {
+    errorMsg.textContent = '';
+  }
+});
