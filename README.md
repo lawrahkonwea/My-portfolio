@@ -46,17 +46,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [portfolio] <a name=""></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[portfolio]** is a...project about me, works i have done and links to my social media handles to connect with people.
+Portfolio is a project about me, works i have done and links to my social media handles to connect with people.
 
-## 🛠 Built With <a name="built-with"></a>
-- Html
-- Css
-- Javascript
-- Major languages
-- Frameworks
-- Technologies used
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -64,24 +56,13 @@ After you're finished please remove all the comments and instructions!
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+  - Html
+  - Css
+  - Javascript
+  - Major languages
+  - Frameworks
+  - Technologies used
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -181,11 +162,6 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/lawrah_xo)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/laurakonwea)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
