@@ -1004,6 +1004,25 @@ form {
   color: #344563;
 }
 
+.source-div { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; margin-bottom: 10px; 
+}
+ 
+.modal-btn { 
+  margin-top: 20px; 
+  border: 1px solid #396df2; 
+  border-radius: 8px; 
+  padding: 5px 10px; 
+  gap: 10px; 
+  background: #fff; 
+  font-style: normal; 
+  font-weight: 500; 
+  font-size: 15px; 
+  color: #6070ff; 
+} 
+
 #remove-btn {
   padding: 10px;
   border: none;
