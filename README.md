@@ -57,12 +57,12 @@ Portfolio is a project about me, works i have done and links to my social media 
 <details>
   <summary>Client</summary>
   - Html
-  - Css
-  - Javascript
-  - Major languages
-  - Frameworks
-  - Technologies used
-
+- Css
+- Javascript
+- Major languages
+- Frameworks
+- Technologies used
+</details>
 
 <!-- Features -->
 
