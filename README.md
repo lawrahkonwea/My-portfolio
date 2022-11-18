@@ -64,13 +64,6 @@ After you're finished please remove all the comments and instructions!
 
 Portfolio is a project about me, works i have done and links to my social media handles to connect with people.
 
-## 🛠 Built With <a name="built-with"></a>
-- Html
-- Css
-- Javascript
-- Major languages
-- Frameworks
-- Technologies used
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -79,8 +72,12 @@ Portfolio is a project about me, works i have done and links to my social media 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>Major languages</li>
+    <li>Framework</li>
+    <li>Technologies used</li>
 </details>
 
 
