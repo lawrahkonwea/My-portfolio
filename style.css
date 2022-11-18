@@ -855,8 +855,7 @@ textarea {
     margin-bottom: 12px;
   }
 
-  #text,
-  #email,
+  input,
   #message {
     border-radius: 0;
   }
@@ -1070,7 +1069,7 @@ textarea {
 /* form validation */
 
 input:valid {
-  border: 2px solid green;
+  border: 3px solid green;
 }
 input:focus:invalid {
   border: 3px solid red;
@@ -1080,7 +1079,7 @@ textarea:focus:invalid {
 }
 
 textarea:focus:valid {
-  border: 2px solid green;
+  border: 3px solid green;
 }
 
 .error {
@@ -1088,4 +1087,5 @@ textarea:focus:valid {
   color: white;
   background-color: red;
   border-radius: 5px;
+
 }
