@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 # 📖 [portfolio] <a name=""></a>
 
 
-portfolio is a project about me, works i have done and links to my social media handles to connect with people.
+Portfolio is a project about me, works i have done and links to my social media handles to connect with people.
 
 ## 🛠 Built With <a name="built-with"></a>
 - Html
@@ -71,6 +71,17 @@ portfolio is a project about me, works i have done and links to my social media 
 - Major languages
 - Frameworks
 - Technologies used
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
 
 <!-- Features -->
@@ -279,4 +290,3 @@ _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
