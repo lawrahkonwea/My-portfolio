@@ -1077,3 +1077,21 @@ form {
 .modal-image:hover {
   transform: scale(1.1);
 }
+
+/* form validation */
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+.div-span {
+  color: white;
+  background-color: red;
+  width: 100%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
