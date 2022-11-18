@@ -6,6 +6,7 @@ This is an example of how you may give instructions on setting up your project l
 
 Modify this file to match your project and remove sections that don't apply.
 
+
 REQUIRED SECTIONS:
 - Table of Contents
 - About the Project
@@ -18,6 +19,10 @@ REQUIRED SECTIONS:
 - Show your support
 - Acknowledgements
 - License
+
+> Description the project.
+This is a project about me, works i have done and links to my social media handles to connect with people. I created a loom video explaining the concepts of this project, and technologies used in building it, effects and many more. 
+
 
 After you're finished please remove all the comments and instructions!
 -->
