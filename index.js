@@ -343,6 +343,8 @@ openFourthModal.addEventListener('click', () => {
 // javascript form validation
 
 const mail = document.getElementById('email');
+const username = document.getElementById('text');
+const textArea = document.getElementById('message');
 const form = document.querySelector('form');
 const errorMsg = document.querySelector('.error');
 
@@ -353,4 +355,35 @@ form.addEventListener('click', (event) => {
   } else {
     errorMsg.textContent = '';
   }
+});
+
+const userData = {
+  username: '',
+  email: '',
+  textArea: '',
+};
+
+// code for data preservation in browser
+
+if (localStorage.getItem('userData')) {
+  const json = JSON.parse(localStorage.getItem('userData'));
+  userData.email = json.email;
+  userData.username = json.username;
+  userData.textArea = json.textArea;
+  mail.value = userData.email;
+  username.value = userData.username;
+  textArea.value = userData.textArea;
+}
+
+username.addEventListener('input', () => {
+  userData.username = username.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+mail.addEventListener('input', () => {
+  userData.email = mail.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+textArea.addEventListener('input', () => {
+  userData.textArea = textArea.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
 });
