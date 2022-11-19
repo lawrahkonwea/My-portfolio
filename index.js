@@ -343,6 +343,8 @@ openFourthModal.addEventListener('click', () => {
 // javascript form validation
 
 const mail = document.getElementById('email');
+const username = document.getElementById('text');
+const textArea = document.getElementById('message');
 const form = document.querySelector('form');
 const errorMsg = document.querySelector('.error');
 
@@ -354,3 +356,14 @@ form.addEventListener('click', (event) => {
     errorMsg.textContent = '';
   }
 });
+
+// code for data preservation in browser
+form.addEventListener('input', () => {
+  localStorage.setItem('text-input', username.value);
+  localStorage.setItem('email-input', mail.value);
+  localStorage.setItem('msg-input', textArea.value);
+});
+
+username.value = localStorage.getItem('text-input');
+mail.value = localStorage.getItem('email-input');
+textArea.value = localStorage.getItem('msg-input');
