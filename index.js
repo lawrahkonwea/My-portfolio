@@ -357,13 +357,33 @@ form.addEventListener('click', (event) => {
   }
 });
 
-// code for data preservation in browser
-form.addEventListener('input', () => {
-  localStorage.setItem('text-input', username.value);
-  localStorage.setItem('email-input', mail.value);
-  localStorage.setItem('msg-input', textArea.value);
-});
+const userData = {
+  username: '',
+  email: '',
+  textArea: '',
+};
 
-username.value = localStorage.getItem('text-input');
-mail.value = localStorage.getItem('email-input');
-textArea.value = localStorage.getItem('msg-input');
+// code for data preservation in browser
+
+if (localStorage.getItem('userData')) {
+  const json = JSON.parse(localStorage.getItem('userData'));
+  userData.email = json.email;
+  userData.username = json.username;
+  userData.textArea = json.textArea;
+  mail.value = userData.email;
+  username.value = userData.username;
+  textArea.value = userData.textArea;
+}
+
+username.addEventListener('input', () => {
+  userData.username = username.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+mail.addEventListener('input', () => {
+  userData.email = mail.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+textArea.addEventListener('input', () => {
+  userData.textArea = textArea.value.trim();
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
