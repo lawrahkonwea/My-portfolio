@@ -20,6 +20,7 @@ const projectList = [
     li1: 'Microverse',
     li2: 'Front-end dev',
     li3: '2023',
+    id: 0,
     project_image: 'images/bookstore.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
@@ -110,40 +111,39 @@ const projectList = [
   // },
 ];
 
-const projects = () => {
-  const getProjects = document.querySelector('.project-main-wrapper1');
-  const allProjects = document.createElement('div');
-  allProjects.className = 'project-container';
-  projectList.forEach((work) => {
-    allProjects.innerHTML = `
+function projects() {
+  let allProjects = '';
+  projectList.filter((card) => card.id >= 0).forEach((card) => {
+
+    allProjects += `
 <div class="project-container1">
-      <div class="developer"><img class="project_img" src="${work.project_image}" alt=""></div>
+      <div class="developer"><img class="project-image" src="${card.project_image}" alt=""></div>
       <div class="block">
-        <div class="postcollection1">
+        <div class="postcollect">
           <div class="project-review1">
-            <label>${work.name}</label>
+            <label>${card.name}</label>
           </div>
-          <ul class="ul">
-            <li class="canopy">${work.li1}</li>
-            <li class="backend1">${work.li2}</li>
-            <li class="backend2">${work.li3}</li>
+          <ul class="backend-dev">
+            <li class="canopy">${card.li1}</li>
+            <li class="backend1">${card.li2}</li>
+            <li class="backend2">${card.li3}</li>
           </ul>
           <div class="access-project">
-            <p>${work.description}</p>
+            <p>${card.description}</p>
           </div>
           <ul class="languagess">
-          <li class="lang1">${work.li4}</li>
-          <li class="lang1">${work.li5}</li>
-          <li class="lang1">${work.li6}</li>
+          <li class="lang1">${card.li4}</li>
+          <li class="lang1">${card.li5}</li>
+          <li class="lang1">${card.li6}</li>
           </ul>
-          <div class="project-btn"><button id="cta">${work.display_button}</button></div>
+          <div><button class="project-btn" id="cta">${card.display_button}</button></div>
         </div>
       </div>
     </div>
 `;
   })
-  getProjects.appendChild(allProjects);
-};
+  document.querySelector('.grid-container').innerHTML = allProjects
+}
 
 projects();
 
@@ -154,27 +154,22 @@ const modalOpen = (id) => {
   projectContainer.innerHTML = `
       <div class="modal-header">
         <p class="modal-title">${projectList[id].name}</p>
-        <button id="close-btn" onClick="closeModal()"><span>${closeButton}</span></button>
+        <button id="remove-btn" onClick="closeModal()"><span>${closeButton}</span></button>
       </div>
-      <ul class="modal-list">
+      <ul class="modal-heading">
         <li class="modal-list1">${projectList[id].li1}</li>
         <li class="modal-list">${projectList[id].li2}</li>
         <li class="modal-list">${projectList[id].li3}</li>
       </ul>
       <div class="whole-con">
-        <div class="img-div">
-          <img class="modal-img" alt="potfolioProjects img" src="${projectList[id].project_image}" />
+        <div class="img-con">
+          <img class="modal-image" alt="potfolioProjects img" src="${projectList[id].project_image}" />
         </div>
         <div class="modal-description">
           <div class="debug2">
             <p class="modal-p">${projectList[id].description}</p>
           </div>
           <div class="debug">
-            <ul class="all-lang-con">
-              <li class="lang-list">${projectList[id].li4}</li>
-              <li class="lang-list">${projectList[id].li5}</li>
-              <li class="lang-list">${projectList[id].li6}</li>
-            </ul>
             <div class="button-con">
               <button class="modal-btn"><a href="${projectList[id].source_code}">Github</a><img alt="github icon" src="${projectList[id].source_icon}" /></button>
               <button class="modal-btn"><a href="${projectList[id].live_button}">Live demo</a><img alt="github icon" src="${projectList[id].live_icon}" /></button>
