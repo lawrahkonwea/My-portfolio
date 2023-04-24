@@ -24,38 +24,28 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [portfolio] <a name=""></a>
 
-
-Portfolio is a project about me, works i have done and links to my social media handles to connect with people.
+Portfolio is a project about me, works I have done and links to my social media handles to connect with people.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
   - Html
 - Css
 - Javascript
-- Major languages
-- Frameworks
-- Technologies used
 </details>
 
-<!-- Features -->
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://lawrahkonwea.github.io/My-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -82,11 +72,11 @@ Clone this repository to your desired folder:
 
 - In desired folder or directory in the CLI, run the command:
 
-> git clone (https/ssh)URL
+> git clone (https://github.com/lawrahkonwea/My-portfolio)
 
 -Navigate into the cloned folder or repository by running the command:
 
-> cd <folder/name of the repository>
+> cd <My-portfolio>
 
 - If VsCode is your default code editor, run:
 
@@ -102,7 +92,7 @@ Install this project with:
 Example command:
 
 ```sh
-  cd my-project
+  cd My-portfolio
   gem install
 ```
 --->
@@ -115,7 +105,7 @@ To run the project, execute the following command:
 Example command:
 
 ```sh
-  rails server
+  click live server on vs code
 ```
 --->
 
@@ -127,42 +117,35 @@ You can deploy this project using:
 Example:
 
 ```sh
-
+  github pages
 ```
  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/lawrahkonwea)
-- Twitter: [@twitterhandle](https://twitter.com/lawrah_xo)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/laurakonwea)
+- GitHub: [@lawrahkonwea](https://github.com/lawrahkonwea)
+- Twitter: [@lawrah_xo](https://twitter.com/lawrah_xo)
+- LinkedIn: [@laura](https://linkedin.com/in/amakalaurakonwea)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
+## 🤝 Future Feature <a name="Future Features"></a>
 
-<!-- CONTRIBUTING -->
+[Add more projecsts]
+[Add accordion to see FAQ]
+
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -171,48 +154,12 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+Thank you Microverse and all the code reviewers for your support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
