@@ -16,7 +16,7 @@ for (let i = 0; i < navLinks.length; i += 1) {
 
 const projectList = [
   {
-    name: 'Tonic',
+    name: 'Book-Store',
     li1: 'Microverse',
     li2: 'Front-end dev',
     li3: '2023',
@@ -32,83 +32,7 @@ const projectList = [
     display_button: 'see project',
     source_code: 'https://github.com/lawrahkonwea/book-store',
   },
-  // {
-  //   name: 'Multi Post Stories',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion2.png',
-  //   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },
-  // {
-  //   name: 'Tonic',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion3.png',
-  //   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },
-  // {
-  //   name: 'Multi Post Stories',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion4.png',
-  //   description: "Lorem Ipsum is simply dummy text of the prin{
-  //   name: 'Multi Post Stories',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion2.png',
-  //   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },
-  // {
-  //   name: 'Tonic',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion3.png',
-  //   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },
-  // {
-  //   name: 'Multi Post Stories',
-  //   li1: 'Canopy',
-  //   li2: 'Back End dev',
-  //   li3: '2015',
-  //   card_image: 'images/webversion4.png',
-  //   description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },ting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-  //   li4: 'Html',
-  //   li5: 'Css',
-  //   li6: 'Javascript',
-  //   live_button: 'See live',
-  //   online_button: 'See source',
-  // },
+
 ];
 
 function projects() {
@@ -116,11 +40,11 @@ function projects() {
   projectList.filter((card) => card.id >= 0).forEach((card) => {
 
     allProjects += `
-<div class="project-container1">
-      <div class="developer"><img class="project-image" src="${card.project_image}" alt=""></div>
+   <div class="project-container">
+      <div class="image-div"><img class="project-image" src="${card.project_image}" alt=""></div>
       <div class="block">
-        <div class="postcollect">
-          <div class="project-review1">
+        <div>
+          <div class="project-review">
             <label>${card.name}</label>
           </div>
           <ul class="backend-dev">
@@ -131,10 +55,10 @@ function projects() {
           <div class="access-project">
             <p>${card.description}</p>
           </div>
-          <ul class="languagess">
-          <li class="lang1">${card.li4}</li>
-          <li class="lang1">${card.li5}</li>
-          <li class="lang1">${card.li6}</li>
+          <ul class="project-lang">
+          <li class="lang">${card.li4}</li>
+          <li class="lang">${card.li5}</li>
+          <li class="lang">${card.li6}</li>
           </ul>
           <div><button class="project-btn" id="cta">${card.display_button}</button></div>
         </div>
@@ -142,7 +66,7 @@ function projects() {
     </div>
 `;
   })
-  document.querySelector('.grid-container').innerHTML = allProjects
+  document.querySelector('.container-project').innerHTML = allProjects
 }
 
 projects();
@@ -158,8 +82,8 @@ const modalOpen = (id) => {
       </div>
       <ul class="modal-heading">
         <li class="modal-list1">${projectList[id].li1}</li>
-        <li class="modal-list">${projectList[id].li2}</li>
-        <li class="modal-list">${projectList[id].li3}</li>
+        <li class="modal-list2">${projectList[id].li2}</li>
+        <li class="modal-list3">${projectList[id].li3}</li>
       </ul>
       <div class="whole-con">
         <div class="img-con">
