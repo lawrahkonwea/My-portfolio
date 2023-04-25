@@ -15,16 +15,51 @@ for (let i = 0; i < navLinks.length; i += 1) {
 }
 
 const projectList = [
+
+  {
+    name: 'Leaderboard',
+    li1: 'Microverse',
+    li2: 'Frontend dev',
+    li3: '2023',
+    id: 1,
+    project_image: 'images/leaderboard.png',
+    source_icon: 'images/github.jpg',
+    live_icon: 'images/Vector.png',
+    description: "This is JavaScript project for the Leaderboard list app, using webpack and ES6 features. API class with adding and removing(A create function for id) respective methods for showing data in Dom refresh function.",
+    li4: 'API',
+    li5: 'React',
+    li6: 'JavaScript',
+    live_button: 'https://app-leaderboard.netlify.app/',
+    display_button: 'see project',
+    source_code: 'https://github.com/lawrahkonwea/A-leaderboard-App',
+  },
+  {
+    name: 'Space Traveler',
+    li1: 'Microverse',
+    li2: 'Frontend dev',
+    li3: '2023',
+    id: 2,
+    project_image: 'images/spacehubs.png',
+    source_icon: 'images/github.jpg',
+    live_icon: 'images/Vector.png',
+    description: "Space Traveler hub was fetched through API, to reserve rockets and cancel reservations and same goes for missions. Unit testings was carred out to ensure better functionality of code.",
+    li4: 'API',
+    li5: 'React',
+    li6: 'JavaScript',
+    live_button: 'https://spacetravelsapp.netlify.app/',
+    display_button: 'see project',
+    source_code: 'https://github.com/lawrahkonwea/space-travelHub',
+  },
   {
     name: 'Book-Store',
     li1: 'Microverse',
-    li2: 'Front-end dev',
+    li2: 'Frontend dev',
     li3: '2023',
-    id: 0,
-    project_image: 'images/bookstore.png',
+    id: 3,
+    project_image: 'images/bookstoreapp.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    description: "A Single Page Application website that lets users to: Add a book, Remove a selected book, and Display a list of books.",
     li4: 'Webpack',
     li5: 'React',
     li6: 'Javascript',
@@ -33,7 +68,45 @@ const projectList = [
     source_code: 'https://github.com/lawrahkonwea/book-store',
   },
 
+  {
+    name: 'To-Do List',
+    li1: 'Microverse',
+    li2: 'Frontend dev',
+    li3: '2023',
+    id: 4,
+    project_image: 'images/todolist.png',
+    source_icon: 'images/github.jpg',
+    live_icon: 'images/Vector.png',
+    description: "This To-do list App is built using webpack and served by webpack dev server. A user can append and delete a task. built with JavaScript, HTML & CSS",
+    li4: 'Webpack',
+    li5: 'React',
+    li6: 'JavaScript',
+    live_button: 'https://the-to-do-list-app.netlify.app/',
+    display_button: 'see project',
+    source_code: 'https://github.com/lawrahkonwea/To-Do-List-App',
+  },
+
+  
+
+  {
+    name: 'Crypto Cash',
+    li1: 'Microverse',
+    li2: 'Frontend dev',
+    li3: '2023',
+    id: 5,
+    project_image: 'images/cryptoapp.png',
+    source_icon: 'images/github.jpg',
+    live_icon: 'images/Vector.png',
+    description: "A single-page web application (SPA) that allows users to check world crypto currency exchange information, examples; coin name, logo, website, market value and many more.",
+    li4: 'API',
+    li5: 'React',
+    li6: 'JavaScript',
+    live_button: 'https://crypto-cash-website.netlify.app/',
+    display_button: 'see project',
+    source_code: 'https://github.com/lawrahkonwea/crypto-app',
+  },
 ];
+
 
 function projects() {
   let allProjects = '';
@@ -65,9 +138,9 @@ function projects() {
       </div>
     </div>
 `;
-  })
-  document.querySelector('.container-project').innerHTML = allProjects
-}
+  });
+  document.querySelector('.container-project').innerHTML = allProjects;
+};
 
 projects();
 
@@ -76,6 +149,7 @@ const modalOpen = (id) => {
   projectContainer.id = 'modal-con';
   const closeButton = '&times';
   projectContainer.innerHTML = `
+  <div class="modal-bag">
       <div class="modal-header">
         <p class="modal-title">${projectList[id].name}</p>
         <button id="remove-btn" onClick="closeModal()"><span>${closeButton}</span></button>
@@ -101,6 +175,7 @@ const modalOpen = (id) => {
           </div>
         </div>
       </div>
+  </div>
     `;
   document.body.appendChild(projectContainer);
 };
@@ -127,7 +202,7 @@ const userData = JSON.parse(localStorage.getItem('userData')) || {
 
 function saveInputToLocalStorage(inputElement, key) {
   inputElement.addEventListener('input', () => {
-    userInfo[key] = inputElement.value.trim();
+    userData[key] = inputElement.value.trim();
     localStorage.setItem('userData', JSON.stringify(userData));
   });
 }

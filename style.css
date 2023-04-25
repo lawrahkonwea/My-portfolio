@@ -196,7 +196,7 @@ header {
 .backend-dev {
   display: flex;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
   margin-top: 10px;
 }
@@ -422,10 +422,24 @@ textarea {
     height: 65px;
   }
 
+  .modal-p {
+    padding: 15px 15px;
+    width: 100%;
+  }
+
   .img-bg {
     background-image: url("images/desktopimage.png");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .project-image {
+    width: 80%;
+    height: 100%;
+  }
+
+  .project-image:hover {
+    transform: scale(1.1);
   }
 
   .container-project {
@@ -441,6 +455,10 @@ textarea {
   .access-project {
     font-size: 16px;
     width: 496px;
+  }
+
+  #modal-con {
+    width: 80%;
   }
 
   .nav-branding {
@@ -616,6 +634,17 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    margin-top: 20px;
+  }
+
+  .modal-p {
+    padding: 15px 15px;
+    width: 100%;
+  }
+
+  .button-con {
+    padding: 0 15px;
+    gap: 10px;
   }
 
   .project-image {
@@ -630,6 +659,14 @@ textarea {
 
   .modal-image:hover {
     transform: scale(1.1);
+  }
+
+  #modal-con {
+    width: 80%;
+  }
+
+  .modal-bag {
+    overflow: auto;
   }
 
   .container-project {
@@ -733,7 +770,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 10px;
+  padding: 0 3px;
   margin-top: 20px;
 }
 
@@ -746,13 +783,14 @@ textarea {
 .modal-heading {
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 20px;
+  margin-top: 15px;
 }
 
 .modal-list1 {
   width: 55px;
   height: 16px;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 600;
   font-style: normal;
   line-height: 16px;
@@ -762,7 +800,7 @@ textarea {
 .modal-list2,
 .modal-list3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 16px;
   color: #7a869a;
 }
@@ -793,14 +831,13 @@ textarea {
   transform: translate(-50%, -50%);
   padding: 15px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  width: 80%;
 }
 
 .modal-btn {
   margin-top: 20px;
   border: 1px solid #396df2;
   border-radius: 8px;
-  padding: 5px 10px;
+  padding: 5px 15px;
   gap: 10px;
   background: #fff;
   font-style: normal;
@@ -829,19 +866,6 @@ textarea {
   cursor: pointer;
 }
 
-.modal-dot {
-  font-weight: 900;
-}
-
-.project-image {
-  width: 80%;
-  height: 100%;
-}
-
-.project-image:hover {
-  transform: scale(1.1);
-}
-
 .img-con {
   height: 300px;
   display: block;
@@ -854,6 +878,7 @@ textarea {
   padding: 0 15px;
   width: 100%;
   height: 100%;
+  margin-top: 15px;
   object-fit: cover;
 }
 
