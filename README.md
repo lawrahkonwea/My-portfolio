@@ -42,7 +42,7 @@ Portfolio is a project about me, works I have done and links to my social media 
 
 
 
-- [Live Demo Link](https://lawrahkonwea.github.io/My-portfolio/)
+- [Live Demo Link](https://showcase-portfolio.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
