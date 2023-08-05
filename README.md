@@ -27,7 +27,7 @@
 
 # 📖 [portfolio] <a name=""></a>
 
-Portfolio is a project about me, works I have done and links to my social media handles to connect with people.
+Portfolio is a project about me, works I have done and links to my social media handles to connect with people. It embodies my recents works, created at different learning phases at Microverse and alos solo projects done to further solidify my knowldege.
 
 ## 🛠 Built With <a name="built-with"></a>
 
