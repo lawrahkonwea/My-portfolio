@@ -26,6 +26,10 @@ body::before {
   height: 55px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #fff;
   position: fixed;
