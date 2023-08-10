@@ -14,6 +14,14 @@ for (let i = 0; i < navLinks.length; i += 1) {
   });
 }
 
+document.addEventListener('aos:in', ({ detail }) => {
+  console.log('animated in', detail);
+});
+
+document.addEventListener('aos:out', ({ detail }) => {
+  console.log('animated out', detail);
+});
+
 const projectList = [
 
   {
@@ -113,6 +121,10 @@ function projects() {
   projectList.filter((card) => card.id >= 0).forEach((card) => {
 
     allProjects += `
+  <div data-aos="fade-up" 
+  data-aos-mirror="true"
+  data-aos-once="true"
+  >
    <div class="project-container">
       <div class="image-div"><img class="project-image" src="${card.project_image}" alt=""></div>
       <div class="block">
@@ -137,6 +149,7 @@ function projects() {
         </div>
       </div>
     </div>
+  </div>
 `;
   });
   document.querySelector('.container-project').innerHTML = allProjects;
