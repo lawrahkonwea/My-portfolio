@@ -247,27 +247,45 @@ header {
   font-size: 40px;
 }
 
+.about-skill {
+  padding: 0 0 0 7%;
+  border-left: 0.2px solid rgba(136, 158, 168, 0.2);
+  margin-left: 0%;
+}
+
 .skills {
+  margin-top: 2rem;
   display: flex;
-  width: 100%;
-  margin-bottom: 10%;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 1rem;
   align-items: center;
+  color: #172b4d;
 }
 
-.skills h2 {
-  color: #000;
-  list-style-type: none;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+.skill img {
+  width: 50px;
 }
 
-.skills img {
-  display: flex;
-  align-items: center;
-  width: 24px;
-  height: 24px;
+.skill-title {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+  color: #172b4d;
+}
+
+.soft-skill {
+  font-size: 1rem;
+  text-transform: lowercase;
+  border-radius: 50px;
+  margin: 0;
+  font-family: 'Orbit', sans-serif;
+  color: #172b4d;
 }
 
 .containertwo {
@@ -437,6 +455,11 @@ textarea {
     background-size: cover;
   }
 
+  .project-main-wrapper {
+    position: static;
+    margin: 0;
+  }
+
   .project-image {
     width: 80%;
     height: 100%;
@@ -461,8 +484,22 @@ textarea {
     width: 496px;
   }
 
+  .img-con {
+    height: 300px;
+  }
+
   #modal-con {
     width: 80%;
+  }
+
+  .modal-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+ 
+  .modal-heading{
+    margin-top: 15px;
   }
 
   .nav-branding {
@@ -524,24 +561,17 @@ textarea {
     gap: 2px;
   }
 
-  .about-list {
-    width: 100%;
-    margin-top: 50px;
-  }
-
   .containertwo {
+    padding: 0 10%;
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 142px;
-    gap: 24px;
+    align-items: flex-start;
+    padding: 120px;
   }
 
   .project-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+    width: 100%;
+    position: sticky;
+    top: 15%;
   }
 
   .project-container {
@@ -632,7 +662,7 @@ textarea {
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .project-container {
     border-radius: 20px;
     justify-content: center;
@@ -644,6 +674,10 @@ textarea {
   .modal-p {
     padding: 15px 15px;
     width: 100%;
+  }
+
+  .project-main-wrapper {
+    position: static;
   }
 
   .button-con {
@@ -661,13 +695,19 @@ textarea {
     transform: scale(1.1);
   }
 
-  .modal-image:hover {
-    transform: scale(1.1);
+  .img-con {
+    height: 200px;
   }
 
   #modal-con {
     width: 80%;
   }
+
+   .modal-title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
 
   .modal-bag {
     overflow: auto;
@@ -788,7 +828,7 @@ textarea {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  margin-top: 15px;
+  margin-bottom: 8px;
 }
 
 .modal-list1 {
@@ -876,14 +916,17 @@ textarea {
   justify-items: center;
   align-items: center;
   overflow: hidden;
+  
 }
 
 .modal-image {
   padding: 0 15px;
   width: 100%;
   height: 100%;
-  margin-top: 15px;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   object-fit: cover;
+  border-radius: 50px;
 }
 
 .modal-image:hover {
@@ -892,11 +935,8 @@ textarea {
 
 .modal-title {
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
   font-style: normal;
   color: #172b4d;
-  margin-top: 10px;
-  font-size: 40px;
   width: 396px;
   height: 46px;
 }
