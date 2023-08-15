@@ -14,26 +14,18 @@ for (let i = 0; i < navLinks.length; i += 1) {
   });
 }
 
-document.addEventListener('aos:in', ({ detail }) => {
-  console.log('animated in', detail);
-});
-
-document.addEventListener('aos:out', ({ detail }) => {
-  console.log('animated out', detail);
-});
-
 const projectList = [
 
   {
     name: 'Leaderboard',
-    li1: 'Microverse',
+    li1: 'Leaderboard',
     li2: 'Frontend dev',
     li3: '2023',
     id: 1,
     project_image: 'images/leader.jpg',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "This is JavaScript project for the Leaderboard list app, using webpack and ES6 features. API class with adding and removing(A create function for id) respective methods for showing data in Dom refresh function.",
+    description: 'This is JavaScript project for the Leaderboard list app, using webpack and ES6 features. API class with adding and removing(A create function for id) respective methods for showing data in Dom refresh function.',
     li4: 'API',
     li5: 'React',
     li6: 'JavaScript',
@@ -42,50 +34,50 @@ const projectList = [
     source_code: 'https://github.com/lawrahkonwea/A-leaderboard-App',
   },
   {
-    name: 'Space Traveler',
-    li1: 'Microverse',
-    li2: 'Frontend dev',
+    name: 'Resort Booking App',
+    li1: 'Bookings',
+    li2: 'Full Stack',
     li3: '2023',
     id: 2,
-    project_image: 'images/spacehubs.png',
+    project_image: 'images/booking-capture.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "Space Traveler hub was fetched through API, to reserve rockets and cancel reservations and same goes for missions. Unit testings was carred out to ensure better functionality of code.",
+    description: 'Resort booking is a full-stack web app that allows a user to manage their bookings, pick a resort destination, reserve, delete, register the number of expected guests as well ',
     li4: 'API',
     li5: 'React',
-    li6: 'JavaScript',
-    live_button: 'https://spacetravelsapp.netlify.app/',
+    li6: 'Ruby on Rails',
+    live_button: 'https://resort-booking-front-end-c8l1.onrender.com/',
     display_button: 'see project',
-    source_code: 'https://github.com/lawrahkonwea/space-travelHub',
+    source_code: 'https://github.com/Thinus01/Resort_Booking_Front-end',
   },
   {
-    name: 'Book-Store',
-    li1: 'Microverse',
+    name: 'Budget App',
+    li1: 'Budget',
     li2: 'Frontend dev',
     li3: '2023',
     id: 3,
-    project_image: 'images/bookstoreapp.png',
+    project_image: 'images/newbudget.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "A Single Page Application website that lets users to: Add a book, Remove a selected book, and Display a list of books.",
+    description: 'This mobile web application is a powerful budget management tool, designed to help you take control of your finances. With an intuitive interface, it allows you to efficiently track and manage your expenses based on different categories, providing valuable insights into your spending habits.',
     li4: 'Webpack',
     li5: 'React',
     li6: 'Javascript',
-    live_button: 'https://savebookstoreproject.netlify.app/',
+    live_button: 'https://budget-tracker-7y1z.onrender.com/',
     display_button: 'see project',
-    source_code: 'https://github.com/lawrahkonwea/book-store',
+    source_code: 'https://github.com/lawrahkonwea/Budget_APP',
   },
 
   {
     name: 'To-Do List',
-    li1: 'Microverse',
+    li1: 'To-Do',
     li2: 'Frontend dev',
     li3: '2023',
     id: 4,
     project_image: 'images/todolist.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "This To-do list App is built using webpack and served by webpack dev server. A user can append and delete a task. built with JavaScript, HTML & CSS",
+    description: 'This To-do list App is built using webpack and served by webpack dev server. A user can append and delete a task. built with JavaScript, HTML & CSS',
     li4: 'Webpack',
     li5: 'React',
     li6: 'JavaScript',
@@ -94,18 +86,16 @@ const projectList = [
     source_code: 'https://github.com/lawrahkonwea/To-Do-List-App',
   },
 
-  
-
   {
     name: 'Crypto Cash',
-    li1: 'Microverse',
+    li1: 'Crypto',
     li2: 'Frontend dev',
     li3: '2023',
     id: 5,
     project_image: 'images/cryptoapp.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
-    description: "A single-page web application (SPA) that allows users to check world crypto currency exchange information, examples; coin name, logo, website, market value and many more.",
+    description: 'A single-page web application (SPA) that allows users to check world crypto currency exchange information, examples; coin name, logo, website, market value and many more.',
     li4: 'API',
     li5: 'React',
     li6: 'JavaScript',
@@ -115,11 +105,9 @@ const projectList = [
   },
 ];
 
-
 function projects() {
   let allProjects = '';
   projectList.filter((card) => card.id >= 0).forEach((card) => {
-
     allProjects += `
   <div data-aos="fade-up" 
   data-aos-mirror="true"
@@ -153,7 +141,7 @@ function projects() {
 `;
   });
   document.querySelector('.container-project').innerHTML = allProjects;
-};
+}
 
 projects();
 
