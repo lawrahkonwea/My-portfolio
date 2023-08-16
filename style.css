@@ -449,6 +449,10 @@ textarea {
     width: 100%;
   }
 
+  .project-main-wrapper {
+    position: static;
+  }
+
   .img-bg {
     background-image: url("images/desktopimage.png");
     background-repeat: no-repeat;
