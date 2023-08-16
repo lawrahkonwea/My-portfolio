@@ -930,15 +930,11 @@ textarea {
   padding: 0 15px;
   width: 100%;
   height: 100%;
-
+  transform: scale(1.1);
   /* background-repeat: no-repeat;
   background-size: cover; */
   object-fit: cover;
   border-radius: 50px;
-}
-
-.modal-image:hover {
-  transform: scale(1.1);
 }
 
 .modal-title {
