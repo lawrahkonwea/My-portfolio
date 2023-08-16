@@ -889,6 +889,7 @@ textarea {
   border: 1px solid #396df2;
   border-radius: 8px;
   padding: 5px 15px;
+  cursor: pointer;
   gap: 10px;
   background: #fff;
   font-style: normal;

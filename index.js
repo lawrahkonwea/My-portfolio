@@ -170,8 +170,8 @@ const modalOpen = (id) => {
           </div>
           <div class="debug">
             <div class="button-con">
-              <button class="modal-btn"><a href="${projectList[id].source_code}">Github</a><img alt="github icon" src="${projectList[id].source_icon}" /></button>
-              <button class="modal-btn"><a href="${projectList[id].live_button}">Live demo</a><img alt="github icon" src="${projectList[id].live_icon}" /></button>
+              <a href="${projectList[id].source_code}"><button class="modal-btn">Github<img alt="github icon" src="${projectList[id].source_icon}" /></button></a>
+              <a href="${projectList[id].live_button}"><button class="modal-btn">Live demo<img alt="github icon" src="${projectList[id].live_icon}" /></button></a>
             </div>
           </div>
         </div>
