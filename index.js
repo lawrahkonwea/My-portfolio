@@ -22,7 +22,7 @@ const projectList = [
     li2: 'Frontend dev',
     li3: '2023',
     id: 1,
-    project_image: 'images/leader.jpg',
+    project_image: 'images/leaderscreen.png',
     source_icon: 'images/github.jpg',
     live_icon: 'images/Vector.png',
     description: 'This is JavaScript project for the Leaderboard list app, using webpack and ES6 features. API class with adding and removing(A create function for id) respective methods for showing data in Dom refresh function.',
