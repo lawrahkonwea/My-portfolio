@@ -17,7 +17,7 @@ for (let i = 0; i < navLinks.length; i += 1) {
 const projectList = [
   {
     name: 'Get-Linked',
-    li1: 'Hackathon',
+    li1: 'Linked',
     li2: 'Frontend dev',
     li3: '2023',
     id: 4,
